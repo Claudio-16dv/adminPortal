@@ -1,6 +1,6 @@
-# Microframework PHP + Next.js
+# AdminPortal PHP + Next.js
 
-Este projeto é um sistema fullstack simples utilizando **PHP puro** (sem frameworks) no backend e **Next.js** no frontend. O backend gerencia usuários, clientes e endereços; e o frontend consome as rotas via API REST.
+Este projeto é um sistema fullstack simples utilizando **PHP puro** (sem frameworks) no backend e **Next.js** no frontend. O backend gerencia usuários, clientes e endereços e o frontend consome as rotas via API REST.
 
 ---
 
@@ -71,7 +71,7 @@ composer start
 
 ---
 
-### 6.Inicie os testes automatizados (Ele apaga os registros dos clientes e endereços do banco)
+### 6.Inicie os testes automatizados
 
 Para rodar os testes automatizados, execute o seguinte comando na raiz do projeto:
 
@@ -82,8 +82,6 @@ O que acontece ao rodar o comando:
 O comando executa os testes automatizados utilizando o PHPUnit.
 
 Todos os testes de criação, atualização, exclusão e validação de clientes e endereços serão executados.
-
-Importante: O processo de teste apaga os registros de clientes e endereços do banco de dados ao final de cada teste para garantir que o ambiente de testes esteja sempre limpo para execuções futuras.
 
 ---
 
