@@ -1,0 +1,377 @@
+/* Layout Containers */
+.container, .wrapperMain, .menuWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.container {
+  align-items: center;
+}
+
+.wrapperMain {
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.menuWrapper {
+  align-items: center;
+  padding: 2rem;
+}
+
+.clientContainer {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Cards */
+.card, .clientCard, .menuCard {
+  background: #5a5959;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(143, 141, 141, 0.418);
+}
+
+.card {
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.clientCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menuCard {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Headers/Titles */
+.title, .headingMain, .menuTitle, .modalTitle {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.headingMain {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.menuTitle {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.addressTitle {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+/* Forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label {
+  color: #4b5563;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.input, .inputField {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Buttons */
+.button, .btnToggle, .btnSave, .btnAction, .btnDanger, .menuBtn, .btnModalConfirm, .btnModalCancel {
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button {
+  background-color: #174ec5;
+  padding: 0.75rem;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
+.btnToggle {
+  background-color: #10b981;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btnToggle:hover {
+  background-color: #059669;
+}
+
+.btnSave {
+  background-color: #229922;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btnSave:disabled {
+  background-color: #77879b;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btnSave:hover {
+  background-color: #198119;
+}
+
+.btnAction {
+  background-color: #174ec5;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btnAction:hover {
+  background-color: #1e40af;
+}
+
+.btnDanger {
+  background-color: #dc2626;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btnDanger:hover {
+  background-color: #b91c1c;
+}
+
+.menuBtn {
+  background-color: #174ec5;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.menuBtn:hover {
+  background-color: #1e40af;
+}
+
+.btnModalConfirm {
+  background-color: #ef4444;
+  padding: 0.5rem 1.25rem;
+}
+
+.btnModalConfirm:hover {
+  background-color: #b91c1c;
+}
+
+.btnModalCancel {
+  background-color: #6b7280;
+  padding: 0.5rem 1.25rem;
+}
+
+.btnModalCancel:hover {
+  background-color: #8e9094;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Client Components */
+.clientHeader, .addressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.clientHeader {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.addressHeader {
+  color: #ffffff;
+  background-color: #4b5563;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.clientDetails, .addressDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.addressDetails {
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.emptyClients {
+  font-size: 1rem;
+  color: #d1d5db;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.addressWrapper {
+  margin-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.5rem;
+}
+
+.emptyMsg {
+  color: #e5e7eb;            /* cinza claro */
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 8px 0 12px;
+}
+
+/* Icons */
+.iconExpand, .iconCollapse {
+  font-size: 1rem;
+}
+
+.iconExpand {
+  transition: transform 0.2s ease;
+  transform: rotate(0deg);
+}
+
+.iconExpand.open {
+  transform: rotate(90deg);
+}
+
+/* Messages */
+.error, .errorMsg {
+  color: #dc2626;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.error {
+  margin-bottom: 0;
+}
+
+.errorMsg {
+  margin-top: 2rem;
+}
+
+.loadingText {
+  font-size: 1rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+
+.modalBox {
+  background-color: #5a5959;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Links */
+.linkWrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.linkBack {
+  color: #f8f8f8;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.closeNewAddress {
+  color: #ef4444;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.closeNewAddress:hover {
+  color: #b91c1c;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

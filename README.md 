@@ -1,0 +1,108 @@
+# Microframework PHP + Next.js
+
+Este projeto é um sistema fullstack simples utilizando **PHP puro** (sem frameworks) no backend e **Next.js** no frontend. O backend gerencia usuários, clientes e endereços; e o frontend consome as rotas via API REST.
+
+---
+
+## ⚙️ Pré-requisitos
+
+- PHP 8+
+- Composer
+- Node.js + NPM
+- MySQL
+
+---
+
+## ✨ Passo a Passo para subir o projeto
+
+## Clonando o Repositório
+
+Para clonar este projeto, use o seguinte comando:
+
+```bash
+git clone https://github.com/Claudio-16dv/AdminPortal.git
+
+---
+
+### 1.Configure o arquivo `.env`
+
+Crie o arquivo `.env` na raiz com base seguindo o .env.example.
+
+Importante: a variavel de ambiente JWT_SECRET, você pode colocar qualquer combinação de caracteres e numeros.
+
+---
+
+### 2.Crie um schema no banco MySQL com o mesmo nome da variavel de ambiente DB_NAME.
+
+---
+
+### 3.Instale as dependências do PHP e NPM
+
+```bash
+composer install-all
+```
+
+---
+
+### 4.Rode as migrations
+
+Cria as tabelas no banco e popula com os dados de:
+
+- 1 usuário
+- 3 clientes
+- 3 endereços
+
+```bash
+composer migrate
+```
+
+---
+
+#### 5.Inicie o Projeto
+
+Na raiz do projeto:
+
+```bash
+composer start
+```
+
+> O backend estará rodando em: `http://localhost:8000`
+> O frontend estará rodando em: `http://localhost:3001` ou `http://localhost:3000
+
+---
+
+### 6.Inicie os testes automatizados (Ele apaga os registros dos clientes e endereços do banco)
+
+Para rodar os testes automatizados, execute o seguinte comando na raiz do projeto:
+
+```bash
+composer test
+```
+O que acontece ao rodar o comando:
+O comando executa os testes automatizados utilizando o PHPUnit.
+
+Todos os testes de criação, atualização, exclusão e validação de clientes e endereços serão executados.
+
+Importante: O processo de teste apaga os registros de clientes e endereços do banco de dados ao final de cada teste para garantir que o ambiente de testes esteja sempre limpo para execuções futuras.
+
+---
+
+## 👤 Usuário de Teste
+
+Use este usuário no login para testar a aplicação:
+
+```text
+Email: john@example.com
+Senha: C_123456
+```
+---
+
+## ✅ Funcionalidades
+
+- Autenticação com login e cadastro
+- CRUD de clientes com múltiplos endereços
+- Validação no frontend e backend
+- Toasts com mensagens de sucesso e erro
+- Middleware de CORS e autenticação
+
+
